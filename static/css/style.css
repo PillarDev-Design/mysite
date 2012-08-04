@@ -1,0 +1,401 @@
+/*******************************\
+ * style.css                   *
+\*******************************/
+body{
+    font-family: 'The Girl Next Door', cursive;
+}
+/*******************************\
+ * Page Layout Organization    *
+\*******************************/
+#site_container{
+    height: 1200px;
+    width: 1249px;
+}
+#main_left_container{
+    border-right: #ED2960 1px solid;
+    float:left;
+    height: 99%;
+    width: 13%;
+}
+#main_left_container_top{
+    background: url(../img/unlined_paper.png) repeat;
+    border-bottom: #EBEBEB 1px solid;
+    top: 0px;
+    height: 14%;
+}
+#main_left_container_body{
+    background: url(../img/lined_paper.png) repeat;
+    height: 84%; 
+}
+#content_container{
+    float: left;
+    height: 99%;
+    width: 82%;
+}
+#content_top{
+    background: url(../img/unlined_paper.png) repeat;
+    border-bottom: #EBEBEB 1px solid;
+    top: 0px;
+    height: 14%;
+}
+    #content_top_title{
+        font-size:4.9em;
+        left:185px;
+        position:absolute;
+        top:40px;
+        z-index:9998;
+    }
+    #content_top_subtitle{
+        font-size:2.5em;
+        left:970px;
+        position:absolute;
+        top:125px;
+        z-index:9999;
+    }
+    #content_top_mf_pic{
+        background: url(../img/male_female_resized.png) no-repeat;
+        height: 92px;
+        left:1043px;
+        position: absolute;
+        top:60px;
+        width: 100px;
+    }
+#content{
+    background: url(../img/lined_paper.png) repeat;
+    height: 84%;
+}
+.clear{
+    clear:both;
+}
+/* Page Holes */
+.page_hole{
+    background: url(../img/hole.png) no-repeat;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+#top_page_hole{
+    top: 130px;
+    left: 50px;
+}
+#middle_page_hole{
+    top: 600px;
+    left: 50px;
+}
+#bottom_page_hole{
+    top: 1000px;
+    left: 50px;
+}
+
+/*******************************\
+ * Actual Page Content         *
+\*******************************/
+#top_content{
+    height: 39%;
+    position: relative;
+    width: 98%;
+}
+#bottom_content{
+    height: 59%;
+    position: relative;
+}
+#footer_container{
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+/*******************************\
+ * top_content divisions       *
+\*******************************/
+#top_content_left_container{
+    float:left;
+    height: 99%;
+    width: 19%;
+}
+#top_content_left_container_year_container{
+    height: 14%;
+    margin-left: 5px;
+    margin-top: 2px;
+    z-index:9999;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+    .custom_select{
+        border: 1px solid #ccc;
+        font-size: 1.75em;
+        height: 99%;
+        overflow: hidden;
+        padding: 1px;
+        width: 99%;
+        z-index: 9999;
+    }
+#top_content_left_container_name_container{
+    border: 1px solid #ccc;
+    height: 84%;
+    margin-left: 2px;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+    #male_name_container{
+        height: 49%;
+        width: 99%;
+    }
+        #male_name_container_title{
+            font-family: arial sans-serif;
+            font-size: 1.3em;
+            height: 19%;
+            text-align: center;
+        }
+        #male_name_container_body{
+            font-size: 0.9em;
+            height: 80%;
+            padding-left: 40px;
+        }
+        #male_name_container_body ul{
+            -webkit-margin-before: 0em !important;
+            -webkit-margin-after: 0em !important;
+            -webkit-padding-start: 0px !important;
+        }
+    #female_name_container{
+        height: 49%;
+        width: 99%;
+    }
+        #female_name_container_title{
+            font-family: arial sans-serif;
+            font-size: 1.15em;
+            height: 19%;
+            text-align: center;
+        }
+        #female_name_container_body{
+            font-size: 0.9em;
+            height: 80%;
+            padding-left: 40px;
+        }
+        #female_name_container_body ul{
+            -webkit-margin-before: 0em !important;
+            -webkit-margin-after: 0em !important;
+            -webkit-padding-start: 0px !important;
+        }
+#top_content_right_container{
+    border: 1px solid #ccc;
+    float:left;
+    height: 99%;
+    margin-left: 10px;
+    margin-top: 2px;
+    width: 79%;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+    /* MAP D3 etc. */
+    .map_background{
+        fill: none;
+        pointer-events: all;
+    }
+    #map_states{
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+    #map_states path:hover{
+        stroke: white;
+    }
+    #click_or_hover{
+        position:absolute;
+        left: 900px;
+        top: 200px;
+        font-size: 2em;
+    }
+/*******************************\
+ * bottom_content divisions    *
+\*******************************/
+#bottom_content_left_container{
+    border: 1px solid #ccc;
+    float:left;
+    height: 99%;
+    margin: 3px;
+    width: 18%;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+    #bottom_content_left_container_title{
+        font-size: 2em;
+        left:10px;
+        height: 7%;
+        width: 180px;
+    }
+    #bottom_content_left_container_body{
+        height: 92%;
+        width: 180px;
+        overflow-y:scroll;
+    }
+    .state_number{
+       font-size: 1.5em; 
+    }
+        #bottom_content_left_container_body ul{
+            -webkit-margin-before: 0em !important;
+            -webkit-margin-after: 0em !important;
+            -webkit-padding-start: 40px !important;
+        }
+.state_box{
+    border: 3px outset gray;
+    margin-bottom: 3px;
+    text-align: center;
+    cursor: pointer;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+
+}
+#bottom_content_main_container{
+    border: 1px solid #ccc;
+    cursor: auto;
+    float:left;
+    font: 10px sans-serif;
+    height: 99%;
+    margin: 3px;
+    width: 59%;
+    z-index: 500;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+    #bottom_content_main_container svg{
+        font: 10px sans-serif;
+        text-align: center;
+        z-index: 9999;
+    }
+    #main_container_national_pie{
+        height:420px;
+        width:420px;
+    }
+    #main_container_northeast_pie{
+        font: 10px sans-serif;
+        height: 200px;
+        position: absolute;
+        right: 230px;
+        text-align: center;
+        top: 0px;
+        width: 200px;
+        z-index: 9999;
+    }
+    #main_container_west_pie{
+        font: 10px sans-serif;
+        height: 200px;
+        position: absolute;
+        right: 465px;
+        text-align: center;
+        top: 5px;
+        width: 200px;
+        z-index: 9999;
+
+    }
+    #main_container_midwest_pie{
+        font: 10px sans-serif;
+        height: 200px;
+        position: absolute;
+        right: 615px;
+        text-align: center;
+        top: 150px;
+        width: 200px;
+        z-index: 9999;
+
+    }
+    #main_container_south_pie{
+        font: 10px sans-serif;
+        height: 200px;
+        position: absolute;
+        right:620px;
+        text-align: center;
+        top:370px;
+        width: 200px;
+        z-index: 9999;
+
+    }
+    #main_container_state_pie{
+        height: 530px;
+        width: 450px;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 25px;
+        left: 275px;
+    }
+    #main_container_state_pie_title{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        height: 100px;
+        width: 540px;
+        font-family: 'The Girl Next Door', cursive;
+        font-size: 4em;
+        text-align: center;
+        top: 10px;
+        left: 225px;
+    }
+    #male_count_container{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 210px;
+        left: 580px;
+        font-family: 'The Girl Next Door', cursive;
+        font-size: 4em;
+    }
+        #male_count_title{
+        }
+        #male_count_body{
+        }
+    #female_count_container{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 210px;
+        left: 340px;
+        font-family: 'The Girl Next Door', cursive;
+        font-size: 4em;
+    }
+        #female_count_title{
+        }
+        #female_count_body{
+        }
+    #click_to_return{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        font-family: 'The Girl Next Door', cursive;
+        font-size: 4em;
+        top: 500px;
+        left: 365px;
+    }
+#bottom_content_right_container{
+    border: 1px solid #ccc;
+    float:left;
+    height: 99%;
+    margin: 3px;
+    width: 18%;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+    #bottom_content_right_container_title{
+        height: 7%;
+        font-size: 1.7em;
+        left:10px;
+        height: 7%;
+        width: 180px;
+    }
+    #bottom_content_right_container_body{
+        height: 92%;
+        overflow-y:scroll;
+        width: 180px;
+    }
+        #bottom_content_right_container_body ul{
+            -webkit-margin-before: 0em !important;
+            -webkit-margin-after: 0em !important;
+            -webkit-padding-start: 40px !important;
+        }
