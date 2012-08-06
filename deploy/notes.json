@@ -1,0 +1,2 @@
+{"category": "testing", "content": "This is the content of test_post_one", "description": "This is the description of test_post_one", "title": "Test Post One", "post_date": "2012-08-06 20:00:00", "post_last_edit_date": "null", "slug": "test_post_one"}
+{"category": "testing", "content": "This is the content of test_post_two", "description": "This is the description of test_post_two", "title": "Test Post Two", "post_date": "2012-08-06 20:10:00", "post_last_edit_date": "null", "slug": "test_post_two"}

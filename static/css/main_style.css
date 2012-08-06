@@ -1,0 +1,129 @@
+/*******************************\
+ * main_style.css              *
+ * --------------------------- *
+ * CSS for the main pages      *
+\*******************************/
+body{
+    font-family: 'The Girl Next Door', cursive;
+}
+/*******************************\
+ * Page Layout Organization    *
+\*******************************/
+#site_container{
+    height: 1200px;
+    width: 1249px;
+}
+#main_left_container{
+    border-right: #ED2960 1px solid;
+    float:left;
+    height: 99%;
+    width: 13%;
+}
+#main_left_container_top{
+    background: url(../img/unlined_paper.png) repeat;
+    border-bottom: #EBEBEB 1px solid;
+    top: 0px;
+    height: 14%;
+}
+#main_left_container_body{
+    background: url(../img/lined_paper.png) repeat;
+    height: 84%; 
+}
+#content_container{
+    float: left;
+    height: 99%;
+    width: 82%;
+}
+#content_top{
+    background: url(../img/unlined_paper.png) repeat;
+    border-bottom: #EBEBEB 1px solid;
+    top: 0px;
+    height: 14%;
+}
+    #content_top_title{
+        font-size:4.9em;
+        left:185px;
+        position:absolute;
+        top:40px;
+        z-index:9998;
+    }
+    #content_top_subtitle{
+        font-size:2.5em;
+        left:650px;
+        position:absolute;
+        top:75px;
+        z-index:9999;
+    }
+#content{
+    background: url(../img/lined_paper.png) repeat;
+    height: 84%;
+}
+.clear{
+    clear:both;
+}
+/* Page Holes */
+.page_hole{
+    background: url(../img/hole.png) no-repeat;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+#top_page_hole{
+    top: 130px;
+    left: 50px;
+}
+#middle_page_hole{
+    top: 600px;
+    left: 50px;
+}
+#bottom_page_hole{
+    top: 1000px;
+    left: 50px;
+}
+#nav_bar_container{
+    position: absolute;
+    right: 0px;
+    height: 250px;
+    width: 350px;
+    font-size: 1.8em;
+}
+    #link_home{
+        position: absolute;
+        bottom: 185px;
+        right: 285px;
+    }
+    #link_projects{
+        position: absolute;
+        bottom: 120px;
+        right: 220px;
+    }
+    #link_note_archive{
+        position: absolute;
+        bottom: 65px;
+        right: 100px;
+    }
+    #link_about{
+        position: absolute;
+        bottom: 20px;
+        right: 75px;
+    }
+/*******************************\
+ * Actual Page Content         *
+\*******************************/
+#top_content{
+    height: 39%;
+    position: relative;
+    width: 98%;
+}
+#bottom_content{
+    height: 59%;
+    position: relative;
+}
+#footer_container{
+    width: 80%;
+    height: 40px;
+    text-align: right;
+    font-size: 1.5em;
+    bottom: -260px;
+    position: absolute;
+}

@@ -1,0 +1,26 @@
+<!-- Database: mysite.db -->
+<database name="mysite.db">
+    <table name="mysite_note_post">
+        <column name="slug" type="3">test_post_one</column>
+        <column name="title" type="3">Test Post One</column>
+        <column name="post_date" type="3">2012-08-06 20:00:00</column>
+        <column name="post_last_edit_date" type="0">null</column>
+        <column name="num_views" type="0">null</column>
+        <column name="related_image" type="3" />
+        <column name="category_id" type="3">testing</column>
+        <column name="content" type="3">This is the content of test_post_one</column>
+        <column name="description" type="3">This is the description of test_post_one</column>
+    </table>
+    <table name="mysite_note_post">
+        <column name="slug" type="3">test_post_two</column>
+        <column name="title" type="3">Test Post Two</column>
+        <column name="post_date" type="3">2012-08-06 20:10:00</column>
+        <column name="post_last_edit_date" type="0">null</column>
+        <column name="num_views" type="0">null</column>
+        <column name="related_image" type="3" />
+        <column name="category_id" type="3">testing</column>
+        <column name="content" type="3">This is the content of test_post_two</column>
+        <column name="description" type="3">This is the description of test_post_two</column>
+    </table>
+
+</database>

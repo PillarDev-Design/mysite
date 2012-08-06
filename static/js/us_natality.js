@@ -61,7 +61,7 @@ function map_init(){
     //      default values to active the top US map.
 
     // Load the state_births data
-    d3.json("static/json/state_births.json", function(json){
+    d3.json("../static/json/state_births.json", function(json){
         state_births_array = json;
     });
 
@@ -100,7 +100,7 @@ function map_init(){
         .domain(current_domain)
         .range(['#E5F5F9','#2CA25F']);
 
-    d3.json("static/json/us-states.json", function(json){
+    d3.json("../static/json/us-states.json", function(json){
         map_states_array = json;
 
         states.selectAll("path")
@@ -237,7 +237,7 @@ function populate_names(){
 function populate_top_ten(){
     var top_ten_array = [];
 
-    d3.json("static/json/state_births.json", function(json){
+    d3.json("../static/json/state_births.json", function(json){
         for(var i=0;i<json[current_year].length;i++){
             top_ten_array[i] = [json[current_year][i]['births'],
                 json[current_year][i]['state']];
@@ -269,7 +269,7 @@ function populate_top_ten(){
 function populate_full_list(){
     var full_list_array = [];
     
-    d3.json("static/json/state_births.json", function(json){
+    d3.json("../static/json/state_births.json", function(json){
         for(var i=0;i<json[current_year].length;i++){
             full_list_array[i] = [json[current_year][i]['births'],
                 json[current_year][i]['state']];
@@ -381,11 +381,11 @@ function default_region_charts(){
             .domain([9040, 401977])
             .range(['#E5F5F9','#2CA25F']);
 	// Populate CSV File Names
-	national_file = "static/json/national_births.csv";
-	northeast_file = "static/json/northeast_births.csv";
-	midwest_file = "static/json/midwest_births.csv";
-	west_file = "static/json/west_births.csv";
-	south_file = "static/json/south_births.csv";
+	national_file = "../static/json/national_births.csv";
+	northeast_file = "../static/json/northeast_births.csv";
+	midwest_file = "../static/json/midwest_births.csv";
+	west_file = "../static/json/west_births.csv";
+	south_file = "../static/json/south_births.csv";
     }else if(current_year === '2003-2006'){
 	// Northeast
 	northeast_color = d3.scale
@@ -408,11 +408,11 @@ function default_region_charts(){
 	    .domain([8523,399603])
 	    .range(['#E5F5F9','#2CA25F']);
 	// Populate CSV File Names
-	national_file = "static/json/national_three_six.csv";
-	northeast_file = "static/json/northeast_three_six.csv";
-	midwest_file = "static/json/midwest_three_six.csv";
-	west_file = "static/json/west_three_six.csv";
-	south_file = "static/json/south_three_six.csv";
+	national_file = "../static/json/national_three_six.csv";
+	northeast_file = "../static/json/northeast_three_six.csv";
+	midwest_file = "../static/json/midwest_three_six.csv";
+	west_file = "../static/json/west_three_six.csv";
+	south_file = "../static/json/south_three_six.csv";
     }
 
 
