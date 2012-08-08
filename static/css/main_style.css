@@ -76,13 +76,13 @@ pre {
         color: #505050;
         float: left;
         font-family: 'The Girl Next Door', cursive;
-        font-size: 3em;
+        font-size: 4em;
         font-weight: bold;
-        left: 320px;
+        left: 220px;
         margin: 0;
         position: absolute;
         text-shadow: 0 1px 5px #303030;
-        top: 90px;
+        top: 60px;
     }
 /* ----------------------- *\
  * Site Navigation         *
@@ -102,20 +102,23 @@ pre {
         font-weight: bold;
     }
     #site_nav_wrapper_home{
-        padding: 0px 0px 0px 80px;
+        padding: 0px 0px 0px 50px;
         position: relative;
     }
     #site_nav_wrapper_projects{
-        padding: 0px 0px 0px 150px;
+        padding: 0px 0px 0px 90px;
         position: relative;
+        top: -15px;
     }
     #site_nav_wrapper_note_archive{
-        padding: 0px 0px 0px 200px;
+        padding: 0px 0px 0px 160px;
         position: relative;
+        top: -20px;
     }
     #site_nav_wrapper_about{
-        padding: 0px 0px 0px 270px;
+        padding: 0px 0px 0px 215px;
         position: relative;
+        top: -30px;
     }
 
 /* ----------------------- *\
@@ -127,6 +130,7 @@ pre {
     font-size: .8em;
     height: 43px;
     margin: 0;
+    position: absolute;
     text-align: right;
     width: 100%;
 }
@@ -134,13 +138,18 @@ pre {
  * Actual Page Content         *
 \*******************************/
 #content_wrapper{
+    height: 700px;
     position: relative;
+}
+#content{
+    padding: 0 1em 43px 1em;
 }
 /* ----------------------- *\
  * Left Side               *
  * ----------------------- */
 #left_side_wrapper{
     float: left;
+    height: 80%;
     margin: 0 0 0 3px;
     padding: 0 0;
     width: 200px;
@@ -174,7 +183,220 @@ pre {
 /* ----------------------- *\
  * Right Side              *
  * ----------------------- */
+#right_side_wrapper{
+    float: left;
+    padding: 0 0 0 2px;
+    width: 79%;
+}
+#right_side_wrapper h2{
+    text-align: center;
+}
+/* ----------------------- *\
+ * Home                    *
+ * ----------------------- */
 
 /* ----------------------- *\
- * Site Navigation         *
+ * Projects                *
  * ----------------------- */
+.project_wrapper{
+    border: 2px dashed;
+    font-family: 'Cagliostro', sans-serif;
+    margin: 80px;
+    padding: 15px;
+    width: 80%;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+.project_title{
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+.project_content{
+    position: relative;
+}
+#us_natality_image{
+    background: url(../img/us_natality.png) no-repeat;
+    border: 1px solid black;
+    cursor: pointer;
+    float: right;
+    height: 285px;
+    margin: 3px;
+    position: relative;
+    width: 537px;
+}
+
+/* ----------------------- *\
+ * Note Archive            *
+ * ----------------------- */
+#archive_wrapper{
+}
+#archive_wrapper_title{
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+}
+#archive_wrapper_content{
+    font-family: 'Cagliostro', sans-serif;
+}
+.note_table table{
+    border: 1px solid black;
+    border:bottom: 2px solid black;
+    border-collapse: collapse;
+    font: .9em 'Cagliostro', sans-serif;
+    float:left;
+    margin: 0px 5px 0px 5px;
+    position: relative;
+    width: 320px;
+}
+.note_table a{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'The Girl Next Door', cursive;
+}
+.note_table th{
+    padding: 0 0 .5em;
+    text-align: left;
+}
+.note_table tr .yellow td{
+    background: #FFC;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.yellow{
+background: #FFC;
+}
+.note_table td{
+    border-bottom: 1px solid #CCC;
+    padding: 0 0 .5em;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+}
+.note_table td:first-child{
+    width: 190px;
+}
+.note_table td+td{
+    border-left: 1px solid #CCC;
+    text-align: center;
+}
+/* ----------------------- *\
+ * About                   *
+ * ----------------------- */
+.tape_v{
+    background: url(../img/tape_vertical.png) no-repeat;
+    height: 152px;
+    position: relative;
+    width: 43px;
+    z-index: 9999;
+}
+.tape_h{
+    background: url(../img/tape_horizontal.png) no-repeat;
+    height: 43px;
+    position: relative;
+    width: 152px;
+    z-index: 9999;
+}
+#job_container{
+    height: 49%;
+    position: relative;
+    width: 95%;
+}
+#job_container ul{
+    font: .8em 'Cagliostro', sans-serif;
+}
+#job_title{
+    font-size: 2em;
+    font-weight: bold;
+}
+#job_content{
+    font-size: .9em;
+}
+    #main_picture_container{
+        height: 604px;
+        float:right;
+        position: relative;
+        width: 453px;
+    }
+    #main_picture{
+        background: url(../img/Nabors1.jpg) no-repeat;
+        height: 604px;
+        position: relative;
+        width: 453px;
+    }
+    #main_picture_top_tape{
+        top: -625px;
+        left: 50px;
+    }
+    #main_picture_bottom_tape{
+        top: -65px;
+        left: 250px;
+    }
+    #main_picture_left_tape{
+        top: -300px;
+        left: -20px;
+    }
+    #main_picture_right_tape{
+        top: -610px;
+        left: 430px;
+    }
+#activity_container{
+    height: 49%;
+    position: relative;
+    width: 95%;
+}
+#activity_container ul{
+    font: .8em 'Cagliostro', sans-serif;
+}
+#activity_title{
+    font-size: 2em;
+    font-weight: bold;
+}
+#activity_content{
+    font-size: .9em;
+}
+    #activity_picture_container{
+        height: 446px;
+        float:right;
+        position:relative;
+        width: 289px;
+        z-index:999;
+        top: 180px;
+        left: 90px;
+    }
+    #activity_picture{
+        background: url(../img/band.jpg) no-repeat;
+        height: 446px;
+        position:relative;
+        width: 289px;
+    }
+    #dog_wash{
+        background: url(../img/dog_wash.jpg) no-repeat;
+        height: 466px;
+        position: relative;
+        width: 700px;
+    }
+    #activity_picture_top_tape{
+        top: -490px;
+        left: 300px;
+    }
+    #activity_picture_bottom_tape{
+        top: -470px;
+        left: 100px;
+    }
+    #activity_picture_left_tape{
+        top: -200px;
+        left: -20px;
+    }
+    #activity_picture_right_tape{
+        top: -70px;
+        left: 80px;
+    }
+    #bears_beets{
+        font-size: 1.6em;
+        font-weight: bold;
+        font-family: 'The Girl Next Door', cursive;
+        padding-left: 4.5em;
+    }

@@ -1,25 +1,45 @@
 {% extends "base.html" %}
 {% block site_content %}
-This is notes.html
+<div id='content_wrapper'>
+    <div id='left_side_wrapper'>
+    </div> <!-- END left_side_wrapper -->
+    <div id='right_side_wrapper'>
+        <div id='content'>
+            <div id='archive_wrapper'>
+                <div id='archive_wrapper_title'>
+                    Note Archive
+                </div>
+                <div id='archive_wrapper_content'>
+                    {% for category in categories %}
+                        <h2>{{category}}</h2>
+                        {% for note in notes %}
+                            {% if note.category == category %}
+                                <div class='note_table'>
+                                    <table>
+                                        <tr class='yellow'>
+                                            <td>Note Title</td>
+                                            <td>Description</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href='/notes/{{note.category}}/{{note.slug}}/'
+                                                    title='{{note.title}}'>{{note.title}}</a>
+                                            </td>
+                                            <td>
+                                                {{note.description|safe}}
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        <div class='clear'></div>
+                        <br /><hr /><br />
+                    {% endfor %}
+                </div> <!-- END archive_wrapper_content -->
+            </div>
+        </div> <!-- END content -->
+    </div> <!-- END right_side_wrapper -->
+</div> <!-- END content_wrapper -->
 
-{% for note in notes %}
-    <div class='note_item'>
-        <h2>
-            <a href='/notes/{{note.category}}/{{note.slug}}/'
-                title='{{note.title}}'>
-                {{note.title}}
-            </a>
-        </h2>
-        <div class='blog_post_item_description'>
-            {{note.description|safe}}
-        </div>
-        <div class='blog_post_read_more grey_text'>
-            Posted on {{note.post_date}} | 
-            <a href='/notes/{{note.category}}/{{note.slug}}/'
-                title='{{note.title}}' rel='nofollow'>
-                Read More &gt;
-            </a>
-        </div>
-    </div>
-{% endfor %}
 {% endblock site_content %}

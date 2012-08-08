@@ -67,7 +67,6 @@ def notes(category=None, slug=None):
     #==========================================================#
     # Setup Return Dictionary                                  #
     #==========================================================#
-    print 'Inside the note route function'
     ret = {
         'notes': [],
         'note': False,
@@ -90,7 +89,6 @@ def notes(category=None, slug=None):
     elif category is not None and slug is not None:
         db_notes = DB.notes.find({'slug':slug}).sort('post_date', -1)
         template_name = 'note_single.html'
-    print 'Passed query check' 
     #==========================================================#
     # Setup Response                                           #
     #==========================================================#

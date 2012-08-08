@@ -1,7 +1,34 @@
 {% extends "base.html" %}
 {% block site_content %}
-This is projects.html
+<div id='content_wrapper'>
+    <div id='left_side_wrapper'>
+    </div> <!-- END left_side_wrapper -->
+    <div id='right_side_wrapper'>
+        <div id='content'>
+            <div class='project_wrapper'>
+                <div class='project_title'>
+                    <a href='/us_natality/' title='us_natality' target='_blank'>US Natality</a>
+                </div>
+                <div class='project_content'>
+                    <div id='us_natality_image'></div>
+                    Source code available via
+                    <a href='https://github.com/PillarDev-Design/US_Natality'
+                        target='_blank'>GitHub</a><br />
+                    <br /><br />
+                    This was a submission for the Health Visualization Contest hosted by
+                    <a href='http://www.visual.ly' target='_blank'>Visual.ly</a>. This interactive
+                    infographic application utilizes D3 (JavaScript API) to render the
+                    map and the pie / donut charts. The event handling is handled through
+                    MooTools (JavaScript API) DOM manipulation.
+                </div>
+            </div>
+        </div> <!-- END content -->
+    </div> <!-- END right_side_wrapper -->
+</div> <!-- END content_wrapper -->
 
-<br />Link to US_Natality -
-<a href='/us_natality/' title='us_natality' target='_blank'>US Natality</a>
+<script type="text/javascript">
+    $('us_natality_image').addEvent('click', function(e){
+        window.open('/us_natality/', '_blank');
+    });
+</script>
 {% endblock site_content %}

@@ -1,27 +1,37 @@
 {% extends "base.html" %}
 {% block site_content %}
-{% for note in latest_notes %}
-    <div class='note_item_container'>
-        <div class='note_title_container'>
-            <div class='note_title'>
-                <a href='/notes/{{note.category}}/{{note.slug}}/'
-                    title='{{note.title}}'>{{note.title}}</a>
-            </div>
-            <div class='note_subtitle'>
-                Posted on {{note.post_date}}
-            </div>
-        </div>
-        <div class='note_description'>
-            {{note.description|safe}}
-        </div>
-        <div class='note_picture'>
-            
-        </div>
-        <div class='note_read_more'>
-            <a href='/notes/{{note.category}}/{{note.slug}}/'
-                title='{{note.title}}' rel='nofollow'>
-                Read Move &gt;</a>
-        </div>
-    </div>
-{% endfor %}
+
+<div id='content_wrapper'>
+    <div id='left_side_wrapper'>
+    </div> <!-- END left_side_wrapper -->
+    <div id='right_side_wrapper'>
+        <div id='content'>
+            {% for note in latest_notes %}
+                <div class='note_item_container'>
+                    <div class='note_title_container'>
+                        <div class='note_title'>
+                            <a href='/notes/{{note.category}}/{{note.slug}}/'
+                                title='{{note.title}}'>{{note.title}}</a>
+                        </div>
+                        <div class='note_subtitle'>
+                            Posted on {{note.post_date}}
+                        </div>
+                    </div>
+                    <div class='note_description'>
+                        {{note.description|safe}}
+                    </div>
+                    <div class='note_picture'>
+                        
+                    </div>
+                    <div class='note_read_more'>
+                        <a href='/notes/{{note.category}}/{{note.slug}}/'
+                            title='{{note.title}}' rel='nofollow'>
+                            Read Move &gt;</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div> <!-- END content -->
+    </div> <!-- END right_side_wrapper -->
+</div> <!-- END content_wrapper -->
+
 {% endblock site_content %}
