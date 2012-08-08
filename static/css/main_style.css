@@ -3,127 +3,178 @@
  * --------------------------- *
  * CSS for the main pages      *
 \*******************************/
-body{
+body, html{
+    background: #f7f7f7 url(../img/lined_paper.png);
     font-family: 'The Girl Next Door', cursive;
+    font-size: 1.1em;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a {
+    color: #336699;
+    text-decoration:none;
+}
+a:hover {
+    color: #A28167;
+}
+h1{
+}
+h2{
+}
+h3{
+    text-align:center;
+}
+h4{
+}
+pre {
+    background: #383838;
+    border: 1px dashed #787878;
+    color: #22ff22;
+    font-size: .8em;
+    font-family: monospace, sans-serif;
+    padding: .3em;
+    text-shadow:none;
+}
+.clear{
+    clear:both;
 }
 /*******************************\
  * Page Layout Organization    *
 \*******************************/
 #site_container{
-    height: 1200px;
-    width: 1249px;
+    background:url(../img/red_line_bg2.png) top left repeat-y;
+    min-height: 100%;
+    position: relative;
 }
-#main_left_container{
-    border-right: #ED2960 1px solid;
-    float:left;
-    height: 99%;
-    width: 13%;
+/* ----------------------- *\
+ * Logo                    *
+ * ----------------------- */
+#logo_wrapper{
+    background: #f7f7f7 url(../img/unlined_paper.png);
+    border-bottom: 3px solid rgba(158,151,194,.6);
+    height: 150px;
+    margin: 0 0 0 0;
+    position: relative;
+    text-align: left;
 }
-#main_left_container_top{
-    background: url(../img/unlined_paper.png) repeat;
-    border-bottom: #EBEBEB 1px solid;
-    top: 0px;
-    height: 14%;
-}
-#main_left_container_body{
-    background: url(../img/lined_paper.png) repeat;
-    height: 84%; 
-}
-#content_container{
-    float: left;
-    height: 99%;
-    width: 82%;
-}
-#content_top{
-    background: url(../img/unlined_paper.png) repeat;
-    border-bottom: #EBEBEB 1px solid;
-    top: 0px;
-    height: 14%;
-}
-    #content_top_title{
-        font-size:4.9em;
-        left:185px;
-        position:absolute;
-        top:40px;
-        z-index:9998;
+    #logo_wrapper_red_line{
+        background: url(../img/red_line_bg2.png) top left repeat-y;
+        height: 100%;
+        position: relative;
+        width: 100%;
     }
-    #content_top_subtitle{
-        font-size:2.5em;
-        left:650px;
-        position:absolute;
-        top:75px;
-        z-index:9999;
+    #logo_wrapper_top_left {
+        background: url(../img/hole.png) no-repeat;
+        height: 150px;
+        left: 70px;
+        position: relative;
+        top: 80px;
+        width: 150px;
     }
-#content{
-    background: url(../img/lined_paper.png) repeat;
-    height: 84%;
-}
-.clear{
-    clear:both;
-}
-/* Page Holes */
-.page_hole{
-    background: url(../img/hole.png) no-repeat;
-    height: 50px;
+    #logo_wrapper_title{
+        color: #505050;
+        float: left;
+        font-family: 'The Girl Next Door', cursive;
+        font-size: 3em;
+        font-weight: bold;
+        left: 320px;
+        margin: 0;
+        position: absolute;
+        text-shadow: 0 1px 5px #303030;
+        top: 90px;
+    }
+/* ----------------------- *\
+ * Site Navigation         *
+ * ----------------------- */
+#site_nav_wrapper{
+    height: 400px;
     position: absolute;
-    width: 50px;
+    right: 0;
+    top: 0;
+    width: 400px;
+    z-index:999;
 }
-#top_page_hole{
-    top: 130px;
-    left: 50px;
-}
-#middle_page_hole{
-    top: 600px;
-    left: 50px;
-}
-#bottom_page_hole{
-    top: 1000px;
-    left: 50px;
-}
-#nav_bar_container{
-    position: absolute;
-    right: 0px;
-    height: 250px;
-    width: 350px;
-    font-size: 1.8em;
-}
-    #link_home{
-        position: absolute;
-        bottom: 185px;
-        right: 285px;
+    #site_nav_wrapper a{
+        display: inline;
+        font-family: 'The Girl Next Door', cursive;
+        font-size: 1.8em;
+        font-weight: bold;
     }
-    #link_projects{
-        position: absolute;
-        bottom: 120px;
-        right: 220px;
+    #site_nav_wrapper_home{
+        padding: 0px 0px 0px 80px;
+        position: relative;
     }
-    #link_note_archive{
-        position: absolute;
-        bottom: 65px;
-        right: 100px;
+    #site_nav_wrapper_projects{
+        padding: 0px 0px 0px 150px;
+        position: relative;
     }
-    #link_about{
-        position: absolute;
-        bottom: 20px;
-        right: 75px;
+    #site_nav_wrapper_note_archive{
+        padding: 0px 0px 0px 200px;
+        position: relative;
     }
+    #site_nav_wrapper_about{
+        padding: 0px 0px 0px 270px;
+        position: relative;
+    }
+
+/* ----------------------- *\
+ * Footer                  *
+ * ----------------------- */
+#footer_wrapper{
+    border-top: 3px solid rgba(158,151,194,.6);
+    bottom: 0;
+    font-size: .8em;
+    height: 43px;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+}
 /*******************************\
  * Actual Page Content         *
 \*******************************/
-#top_content{
-    height: 39%;
-    position: relative;
-    width: 98%;
-}
-#bottom_content{
-    height: 59%;
+#content_wrapper{
     position: relative;
 }
-#footer_container{
-    width: 80%;
-    height: 40px;
-    text-align: right;
-    font-size: 1.5em;
-    bottom: -260px;
-    position: absolute;
+/* ----------------------- *\
+ * Left Side               *
+ * ----------------------- */
+#left_side_wrapper{
+    float: left;
+    margin: 0 0 0 3px;
+    padding: 0 0;
+    width: 200px;
 }
+#side_hole{
+    background: url(../img/hole.png) no-repeat;
+    height: 50px;
+    left: 70px;
+    position: relative;
+    top: 10px;
+    width: 50px;
+}
+    .recent_post_wrapper{
+        border-bottom: 1px solid #343434;
+        padding: 15px 0 15px 0;
+    }
+    .recent_post_title{
+        font-family: 'The Girl Next Door', cursive;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .recent_post_content{
+        font-size: .8em;
+    }
+        .recent_post_content a{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 0 0 0 .2em;
+        }
+/* ----------------------- *\
+ * Right Side              *
+ * ----------------------- */
+
+/* ----------------------- *\
+ * Site Navigation         *
+ * ----------------------- */

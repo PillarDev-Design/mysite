@@ -16,47 +16,42 @@
 </head>
 <body>
 <div id='site_container'>
-    <div id='main_left_container'>
-        <div id='main_left_container_top'>
-            <div class='page_hole' id='top_page_hole'></div>
-        </div>
-        <div id='main_left_container_body'>
-            <div class='page_hole' id='middle_page_hole'></div>
-            <div class='page_hole' id='bottom_page_hole'></div>
-        </div>
-    </div> <!-- END main_left_container -->
-    <div id='content_container'>
-        <div id='content_top'>
-            <div id='content_top_title'>
-                Chris Nabors
-            </div>
-            <div id='content_top_subtitle'>
-                (cnabors.net)
-            </div>
-            <div id='nav_bar_container'>
-                <div id='link_home'>
-                    <a href='/' title='Home'>Home</a>
+    <!-- Logo Wrapper -->
+    <div id='logo_wrapper'>
+        <div id='logo_wrapper_red_line'>
+            <div id='logo_wrapper_top_left'></div>
+            <div id='logo_wrapper_title'>Chris Nabors</div>
+            <div class='clear'></div>
+            <!-- Site Navigation -->
+            <div id='site_nav_wrapper'>
+                <div id='site_nav_wrapper_home'>
+                    <a href='/'
+                        title='Home'>Home</a>
                 </div>
-                <div id='link_projects'>
-                    <a href='/projects/' title='Projects'>Projects</a>
+                <div id='site_nav_wrapper_projects'>
+                    <a href='/projects/'
+                        title='Projects'>Projects</a>
                 </div>
-                <div id='link_note_archive'>
-                    <a href='/notes/' title='Note_Archive'>Note Archive</a>
+                <div id='site_nav_wrapper_note_archive'>
+                    <a href='/notes/'
+                        title='Note_Archive'>Note Archive</a>
                 </div>
-                <div id='link_about'>
-                    <a href='/about/' title='About'>About</a>
+                <div id='site_nav_wrapper_about'>
+                    <a href='/about/'
+                        title='About'>About</a>
                 </div>
-            </div>
-        </div>
-        <div id='content'>
-            {% block site_content %}{% endblock site_content %}
-            <div id='footer_container'>
-                Chris Nabors - PillarDD@Gmail.com
-            </div>
-        </div> <!-- END content -->
-    </div> <!-- END content_container -->
+            </div> <!-- END site_nav_wrapper' -->
+            <div class='clear'></div>
+        </div> <!-- END logo_wrapper_red_line -->
+    </div> <!-- END logo_wrapper -->
+    <div class='clear'></div>
+    <!-- Block Content -->
+    {% block site_content %}{% endblock site_content %}
+    <!-- Footer -->
+    <div id='footer_wrapper'>
+        Chris Nabors | CNabors.net | PillarDD@Gmail.com
+    </div>
 </div> <!-- END site_container -->
-
 <!-- Bottom JavaScript -->
 <script type="text/javascript">
 </script>

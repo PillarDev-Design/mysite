@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block site_content %}
-{% for note in latest_notes %}
-    <div class='note_item_container'>
+{% for note in notes %}
+    <div class='note_single_container'>
         <div class='note_title_container'>
             <div class='note_title'>
                 <a href='/notes/{{note.category}}/{{note.slug}}/'
@@ -11,16 +11,10 @@
                 Posted on {{note.post_date}}
             </div>
         </div>
-        <div class='note_description'>
-            {{note.description|safe}}
+        <div class='note_single_picture'>
         </div>
-        <div class='note_picture'>
-            
-        </div>
-        <div class='note_read_more'>
-            <a href='/notes/{{note.category}}/{{note.slug}}/'
-                title='{{note.title}}' rel='nofollow'>
-                Read Move &gt;</a>
+        <div class='note_single_content'>
+            {{note.content|safe}}
         </div>
     </div>
 {% endfor %}

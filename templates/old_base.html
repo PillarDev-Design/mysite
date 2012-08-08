@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>{% block head_title %}{% endblock%} cnabors.net | Chris Nabors</title>
+    <!-- MooTools -->
+    <script type='text/javascript' src='/static/js/mootools.js'></script>
+    <!-- D3 -->
+    <script type='text/javascript' src='/static/js/d3.js'></script>
+    <!-- Local JS File -->
+    <script type='text/javascript' src='/static/js/main.js'></script>
+    <!-- Google API Web Font (Mimics Handwriting) -->
+    <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+    <!-- Local CSS File -->
+    <link href='/static/css/main_style.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div id='site_container'>
+    <div id='main_left_container'>
+        <div id='main_left_container_top'>
+            <div class='page_hole' id='top_page_hole'></div>
+        </div>
+        <div id='main_left_container_body'>
+            <div class='page_hole' id='middle_page_hole'></div>
+            <div class='page_hole' id='bottom_page_hole'></div>
+        </div>
+    </div> <!-- END main_left_container -->
+    <div id='content_container'>
+        <div id='content_top'>
+            <div id='content_top_title'>
+                Chris Nabors
+            </div>
+            <div id='content_top_subtitle'>
+                (cnabors.net)
+            </div>
+            <div id='nav_bar_container'>
+                <div id='link_home'>
+                    <a href='/' title='Home'>Home</a>
+                </div>
+                <div id='link_projects'>
+                    <a href='/projects/' title='Projects'>Projects</a>
+                </div>
+                <div id='link_note_archive'>
+                    <a href='/notes/' title='Note_Archive'>Note Archive</a>
+                </div>
+                <div id='link_about'>
+                    <a href='/about/' title='About'>About</a>
+                </div>
+            </div>
+        </div>
+        <div id='content'>
+            {% block site_content %}{% endblock site_content %}
+            <div id='footer_container'>
+                Chris Nabors - PillarDD@Gmail.com
+            </div>
+        </div> <!-- END content -->
+    </div> <!-- END content_container -->
+</div> <!-- END site_container -->
+
+<!-- Bottom JavaScript -->
+<script type="text/javascript">
+</script>
+</body>
+</html>

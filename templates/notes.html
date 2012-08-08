@@ -5,18 +5,18 @@ This is notes.html
 {% for note in notes %}
     <div class='note_item'>
         <h2>
-            <a href='/blog/{{post.category}}/{{post.slug}}/'
-                title='{{post.title}}'>
-                {{post.title}}
+            <a href='/notes/{{note.category}}/{{note.slug}}/'
+                title='{{note.title}}'>
+                {{note.title}}
             </a>
         </h2>
         <div class='blog_post_item_description'>
-            {{post.description|safe}}
+            {{note.description|safe}}
         </div>
         <div class='blog_post_read_more grey_text'>
-            Posted on {{post.post_date}} | 
-            <a href='/blog/{{post.category}}/{{post.slug}}/'
-                title='{{post.title}}' rel='nofollow'>
+            Posted on {{note.post_date}} | 
+            <a href='/notes/{{note.category}}/{{note.slug}}/'
+                title='{{note.title}}' rel='nofollow'>
                 Read More &gt;
             </a>
         </div>

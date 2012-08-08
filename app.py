@@ -34,7 +34,13 @@ def render_skeleton(template_name='index.html', **kwargs):
 @app.route('/')
 def index():
     ret = {}
-    #ret['latest_notes'] = get_latest_notes()
+    #==========================================================#
+    # Grab Last 5 Notes                                        #
+    #==========================================================#
+    all_notes = []
+    categories = {}
+    all_notes, ret['categories'] = get_all_notes_and_categories()
+    ret['latest_notes'] = all_notes[0:5]
     return render_skeleton('home.html', **ret)
 
 @app.route('/about/')
@@ -56,23 +62,25 @@ def us_natality():
 #==============================================================#
 @app.route('/notes/')
 @app.route('/notes/<category>/')
-@app.route('/notes/<category>/<slug>')
-def notes():
+@app.route('/notes/<category>/<slug>/')
+def notes(category=None, slug=None):
     #==========================================================#
     # Setup Return Dictionary                                  #
     #==========================================================#
+    print 'Inside the note route function'
     ret = {
         'notes': [],
-        'note', False,
+        'note': False,
         'categories': {}
         }
 
     template_name = 'notes.html'
-
+    
     #==========================================================#
     # Get Note based on Query                                  #
     #==========================================================#
     # All Notes
+
     if category is None and slug is None:
         db_notes = DB.notes.find().sort('post_date', -1)
     # Only Category Notes
@@ -81,15 +89,15 @@ def notes():
     # Single Note
     elif category is not None and slug is not None:
         db_notes = DB.notes.find({'slug':slug}).sort('post_date', -1)
-        template = 'note_single.html'
-
+        template_name = 'note_single.html'
+    print 'Passed query check' 
     #==========================================================#
     # Setup Response                                           #
     #==========================================================#
     for note in db_notes:
         note.pop('_id')
         ret['notes'].append(note)
-
+    
     #==========================================================#
     # For All Pages                                            #
     #==========================================================#
@@ -97,7 +105,7 @@ def notes():
     all_notes, ret['categories'] = get_all_notes_and_categories()
     ret['latest_notes'] = all_notes[0:5]
     ret['total_notes'] = len(all_notes)
-
+        
     return render_skeleton(template_name, **ret)
 
 def get_all_notes_and_categories():
@@ -125,5 +133,5 @@ def get_all_notes_and_categories():
 #==============================================================#
 if __name__ == "__main__":
     if ENV == 'develop':
-        app.debug == True
+        app.debug = True
         app.run(port=PORT)

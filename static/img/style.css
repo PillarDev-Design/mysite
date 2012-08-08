@@ -1,0 +1,377 @@
+/* --------------------------------------------------
+ *  style.css
+ * ------------------------------------------------*/
+
+
+/* --------------------------------------------------
+ * Default Overrides 
+ * ------------------------------------------------*/
+
+body, html {
+    background: #f7f7f7 url(lined_paper.png);
+    font-family: 'Cagliostro', sans-serif;
+    font-size: 1.1em;
+    height:100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+}
+
+a {
+    color:#336699;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#A28167;
+}
+
+/* --------------------------------------------------
+ * Headers
+ * (Override h1,h2,etc.)
+ * ------------------------------------------------*/
+h1 {
+}
+h2 {
+}
+h3 {
+    text-align:center;
+}
+h4 {
+}
+
+/* --------------------------------------------------
+ * Pre (for code blocks)
+ * ------------------------------------------------*/
+pre {
+    background;#383838;
+    border:1px dashed #787878;
+    color:#22ff22;
+    font-size:.8em;
+    font-family: monospace, sans-serif;
+    padding:.3em;
+    text-shadow:none;
+}
+
+/* --------------------------------------------------
+ * **************************************************
+ * Layout
+ * **************************************************
+ * ------------------------------------------------*/
+#site_container {
+    background:url(red_line_bg2.png) top left repeat-y;
+    min-height:100%;
+    position:relative;
+}
+/* --------------------------------------------------
+ * Logo
+ * ------------------------------------------------*/
+#logo_wrapper {
+    background: #f7f7f7 url(unlined_paper.png);
+    border-bottom: 3px solid rgba(158,151,194,.6);
+    height: 150px;
+    margin:0 0 0 0;
+    position:relative;
+    text-align:left;
+}
+    #logo_wrapper_red_line {
+        background: url(red_line_bg2.png) top left repeat-y;
+        height:100%;
+        position:relative;
+        width:100%;
+    }
+    #logo_wrapper_top_left {
+        background: url(hole.png) no-repeat;
+        height:150px;
+        left:70px;
+        position:relative;
+        top:80px;
+        width:150px;
+    }
+    #logo_wrapper_title { 
+        color:#505050;
+        float:left;
+        font-family: 'Passero One', cursive;
+        font-size:3em;
+        font-weight:bold;
+        left:320px;
+        margin:0;
+        position:absolute;
+        text-shadow:0 1px 5px #303030;
+        top:90px;
+    }
+/* --------------------------------------------------
+ * Site Navigation
+ * ------------------------------------------------*/
+#site_nav_wrapper {
+    height: 400px;
+    position:absolute;
+    right:0;
+    top:0;
+    width: 400px;
+    z-index:999;
+}
+    #site_nav_wrapper_home {
+        padding: 0px 0px 0px 80px;
+        position:relative;
+    }
+    #site_nav_wrapper_blog {
+        padding: 0px 0px 0px 150px;
+        position:relative;
+    }
+    #site_nav_wrapper_tutorials {
+        padding: 0px 0px 0px 200px;
+        position:relative;
+    }
+    #site_nav_wrapper_about { 
+        padding: 0px 0px 0px 270px;
+        position:relative;
+    }
+    #site_nav_wrapper a{
+        display: inline;
+        font-family: 'Give You Glory', cursive;
+        font-size:1.8em;
+        font-weight:bold;
+    }
+
+/* --------------------------------------------------
+ * Main Content
+ * ------------------------------------------------*/
+#content_wrapper {
+    position:relative;
+}
+    /* Left Side */
+    #left_side_wrapper {
+        float:left;
+        margin: 0 0 0 3px;
+        padding: 0 0;
+        width:200px;
+    }
+    #side_hole {
+        background: url(hole.png) no-repeat;
+        height:50px;
+        left:70px;
+        position:relative;
+        top:10px;
+        width:50px;
+    }
+        .recent_post_wrapper {
+            border-bottom:1px solid #343434;
+            padding:15px 0 15px 0; 
+        }
+        .recent_post_title {
+            font-family: 'Give You Glory', cursive;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align:center;
+        }
+        .recent_post_content {
+            font-size: .8em;
+        }
+            .recent_post_content a{
+                font-size:1.3em;
+                font-weight:bold;
+                padding: 0 0 0 .2em;
+            }
+
+    /* Right Side */
+    #right_side_wrapper {
+        float:left;
+        padding:0 0 0 2px;
+        width:79%;
+    }
+    #right_side_wrapper h2{
+        text-align:center;
+    }
+    #content {
+        padding: 0 1em 43px 1em;
+    }
+        /* main_page_notes */
+        #main_page_notes_wrapper {
+        }
+            #main_page_notes_title {
+                font-family: 'Give You Glory', cursive;
+                font-size: 1.2em;
+            }
+            #main_page_notes_content{ 
+                font-family: 'Cagliostro', sans-serif;
+            }
+        /* directory_content */
+        .directory_content_wrapper {
+        }
+            .directory_content_title {
+                font-family: 'Give You Glory', cursive;
+                font-size: 2.2em;
+                font-weight: bold;
+                text-align: center;
+            }
+            .directory_content_content {
+                font-family: 'Cagliostro', sans-serif;
+            }
+                .directory_content_content h2{
+                    font-family: 'Give You Glory', cursive;
+                }
+                .directory_content_content_table {
+                    float:left;
+                    margin: 0px 5px 0px 5px;
+                    position:relative;
+                }
+                .directory_content_content_table a{
+                    font-size:1.6em;
+                    font-weight:bold;
+                    font-family: 'Give You Glory', cursive;
+                }
+                .directory_content_content_table table{
+                    border: 1px solid black;
+                    border-bottom: 2px solid black;
+                    border-collapse: collapse;
+                    font: .9em 'Cagliostro', sans-serif;
+                    width:320px;
+                }
+                .directory_content_content_table th{
+                    padding: 0 0.5em;
+                    text-align:left;
+                }
+                .directory_content_content_table tr.yellow td{
+                    background:#FFC;
+                    border-top:1px solid black;
+                    border-bottom:1px solid black;
+                    
+                }
+                .directory_content_content_table td{
+                    border-bottom:1px solid #CCC;
+                    padding: 0 0.5em;
+                }
+                .directory_content_content_table td:first-child {
+                    width: 190px;
+                }
+                .directory_content_content_table td+td{
+                    border-left:1px solid #CCC;
+                    text-align:center;
+                }
+
+    /* about page */
+    #about_page_content_wrapper {
+        height:1600px;
+        width:100%;
+    }
+    #about_page_content_title {
+        font-family: 'Give You Glory', cursive;
+        font-size: 2.3em;
+        font-weight:bold;
+        left: 300px;
+        position: relative;
+        top: 30px;
+    }
+    #about_page_content_picture_wrapper {
+        float:right;
+        height: 604px;
+        margin: 50px 0 0 0;
+        position:relative;
+        width:453px;
+    }
+        #about_page_content_picture_one {
+            background: url(Nabors1.jpg) no-repeat;
+            float:right;
+            height:604px;
+            position:relative;
+            width:453px;
+            z-index:999;
+        }
+        #about_page_content_vertical_tape_one {
+            left:-25px;
+            top:25px;
+        }
+        #about_page_content_vertical_tape_two {
+            left:430px;
+            top:250px;
+        }
+        #about_page_content_horizontal_tape_one {
+            left:180px;
+            top:-330px;
+        }
+        #about_page_content_horizontal_tape_two {
+            left: 70px;
+            top:240px;
+        } 
+    #about_page_content_picture_wrapper_two {
+        height: 446px;
+        left:0;
+        margin: 0 0 0 50px;
+        position:relative;
+        top:0;
+        width:289px;
+    }
+        #about_page_content_picture_two {
+            background: url(band.jpg) no-repeat;
+            height:446px;
+            position:relative;
+            width:289px;
+        }
+        #about_page_content_vertical_tape_three {
+            left:-25px;
+            top:-450px;
+        }
+        #about_page_content_horizontal_tape_three {
+            left:60px;
+            top:-180px;
+        }
+    .about_page_content_vertical_tape {
+        background: url(tape_vertical.png) no-repeat;
+        height:152px;
+        position:relative;
+        width:43px;
+    }
+    .about_page_content_horizontal_tape {
+        background: url(tape_horizontal.png) no-repeat;
+        height:43px;
+        position:relative;
+        width:152px;
+    }
+    #about_page_content_content {
+        position:absolute;
+        float:left;
+        padding: 50px 0 0 0;
+    }
+        .about_page_content_content_title {
+            font-size: 1.5em;
+            left: 200px;
+            position:relative;
+        }
+        #about_page_activities_wrapper {
+            float:left;
+            padding: 0 0 0 0;
+            position:absolute;
+            z-index:999;
+        }
+            #about_page_content_content_title_activities {
+                padding: 0 0 0 300px;
+                position:relative;
+            }
+            #about_page_content_content_activities_wrapper {
+                left:0;
+                position:relative;
+                top:0;
+            }
+
+/* --------------------------------------------------
+ * Footer
+ * ------------------------------------------------*/
+#footer_wrapper {
+    border-top: 3px solid rgba(158,151,194,.6);
+    bottom: 0;
+    font-size:.8em;
+    height: 43px; 
+    margin:0;
+    text-align:right;
+    width: 100%;
+}
+
+/* --------------------------------------------------
+ * **************************************************
+ * Reusable classes
+ * **************************************************
+ * ------------------------------------------------*/
+.clear {
+    clear:both;
+}
