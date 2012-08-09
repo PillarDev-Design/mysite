@@ -6,6 +6,7 @@
     </div> <!-- END left_side_wrapper -->
     <div id='right_side_wrapper'>
         <div id='content'>
+            <div id='home_title'>Recent Notes</div>
             {% for note in latest_notes %}
                 <div class='note_item_container'>
                     <div class='note_title_container'>
@@ -16,17 +17,20 @@
                         <div class='note_subtitle'>
                             Posted on {{note.post_date}}
                         </div>
+                        <div class='note_description'>
+                            {{note.description|safe}}
+                        </div>
                     </div>
-                    <div class='note_description'>
-                        {{note.description|safe}}
-                    </div>
-                    <div class='note_picture'>
-                        
-                    </div>
-                    <div class='note_read_more'>
-                        <a href='/notes/{{note.category}}/{{note.slug}}/'
-                            title='{{note.title}}' rel='nofollow'>
-                            Read Move &gt;</a>
+                    <div class='note_body_container'>
+                        <div class='note_body'>
+                            {{note.content|safe}}
+                            <div class='note_read_more'>
+                                <a href='/notes/{{note.category}}/{{note.slug}}/'
+                                    title='{{note.title}}' rel='nofollow'>
+                                    Read More &gt;</a>
+                            </div>
+                            <div class='clear'></div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
