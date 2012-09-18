@@ -18,12 +18,13 @@
                             Posted on {{note.post_date}}
                         </div>
                         <div class='note_description'>
-                            {{note.description|safe}}
+                            {{note.category}}
                         </div>
+                        <div class='clear'></div>
                     </div>
                     <div class='note_body_container'>
                         <div class='note_body'>
-                            {{note.content|safe}}
+                            {{note.description|safe}}
                             <div class='note_read_more'>
                                 <a href='/notes/{{note.category}}/{{note.slug}}/'
                                     title='{{note.title}}' rel='nofollow'>

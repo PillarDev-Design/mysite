@@ -205,6 +205,19 @@ pre {
     position: relative;
     width: 99%;
 }
+.note_single_container{
+    height: 80%;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    top: 60px;
+    left: 210px;
+}
+    .note_single_content{
+        font-family: 'Cagliostro', sans-serif;
+        padding: 25px;
+        border: 1px solid black;
+    }
     .note_title_container{
         height: 19%;
     }
@@ -225,12 +238,19 @@ pre {
             font-family: 'Cagliostro', sans-serif;
             text-align: right;
             padding: 5px;
+            width: 20%;
+            position: relative;
+            float: right;
         }
         .note_description{
+            background: #FFC;
             border: 1px solid black;
             font-size: 0.5em;
             font-family: 'Cagliostro', sans-serif;
             padding: 5px;
+            width: 77%;
+            position: relative;
+            float: left;
         }
     .note_body_container{
         height: 79%;
@@ -239,6 +259,8 @@ pre {
             border: 1px solid black;
             height: 140px;
             overflow: hidden;
+            padding: 20px 0px 0px 20px;
+            font-family: 'Cagliostro', sans-serif;
         }
         .note_read_more{
             top: 95px;

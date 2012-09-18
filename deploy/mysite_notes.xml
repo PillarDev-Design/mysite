@@ -1,26 +1,26 @@
 <!-- Database: mysite.db -->
 <database name="mysite.db">
     <table name="mysite_note_post">
-        <column name="slug" type="3">test_post_one</column>
-        <column name="title" type="3">Test Post One</column>
-        <column name="post_date" type="3">2012-08-06 20:00:00</column>
+        <column name="slug" type="3">page_setup</column>
+        <column name="title" type="3">Initial Page Setup</column>
+        <column name="post_date" type="3">2012-09-17 20:00:00</column>
         <column name="post_last_edit_date" type="0">null</column>
         <column name="num_views" type="0">null</column>
         <column name="related_image" type="3" />
-        <column name="category_id" type="3">testing</column>
-        <column name="content" type="3">This is the content of test_post_one</column>
-        <column name="description" type="3">This is the description of test_post_one</column>
-    </table>
-    <table name="mysite_note_post">
-        <column name="slug" type="3">test_post_two</column>
-        <column name="title" type="3">Test Post Two</column>
-        <column name="post_date" type="3">2012-08-06 20:10:00</column>
-        <column name="post_last_edit_date" type="0">null</column>
-        <column name="num_views" type="0">null</column>
-        <column name="related_image" type="3" />
-        <column name="category_id" type="3">testing</column>
-        <column name="content" type="3">This is the content of test_post_two</column>
-        <column name="description" type="3">This is the description of test_post_two</column>
+        <column name="category_id" type="3">General</column>
+        <column name="content" type="3">Successfully switched the site from Django to Flask/mongodb!</column>
+        <column name="description" type="3">Successful launch.</column>
     </table>
 
+    <table name="mysite_note_post">
+        <column name="slug" type="3">health_data_vis</column>
+        <column name="title" type="3">Health Data Vis Contest</column>
+        <column name="post_date" type="3">2012-09-18 20:00:00</column>
+        <column name="post_last_edit_date" type="0">null</column>
+        <column name="num_views" type="0">null</column>
+        <column name="related_image" type="3" />
+        <column name="category_id" type="3">D3</column>
+        <column name="content" type="3">Heya everyone,&lt;br /&gt;&lt;br /&gt;Looks like I came in third place on the data visualization contest hosted by Visually. Awesome-sauce. It was a great exercise to get used to designing/developing utilizing the D3 JS API library. I'm really excited to see what other awesome visualizations I can concieve using this exciting library.&lt;br /&gt;&lt;br /&gt;I've posted a few of my past projects under the project tab, you should check those out too. I'll be updating this site every once in a while with completed projects from my GitHub account.&lt;br /&gt;&lt;br /&gt;So say we all.&lt;br /&gt;&lt;br /&gt;- Chris</column>
+        <column name="description" type="3">A few talking points about D3 and future projects.</column>
+    </table>
 </database>

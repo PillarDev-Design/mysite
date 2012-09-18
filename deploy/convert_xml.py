@@ -34,6 +34,13 @@ def convert():
 
     #Get the notes
     notes = notes_dict['database']['table']
+    
+    print '*' * 42
+    print notes
+    for item in notes:
+        print '*' * 42
+        print 'NOTE ITEM:'
+        print item
 
     #MongoDB expects the JSON file to have one document per line, so we need to
     #   iterate over each line in the file
