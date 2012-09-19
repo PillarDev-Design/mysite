@@ -188,7 +188,6 @@ pre {
     -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
     -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
     box-shadow: 0 10px 20px #e0e0e0 inset;
-    background: #e8E8E8;
     padding: 15px;
     margin: 20px;
     font-size: 1.1em;
@@ -205,7 +204,6 @@ pre {
     -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
     -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
     box-shadow: 0 10px 20px #e0e0e0 inset;
-    background: #e8E8E8;
     padding: 15px;
     margin: 20px;
     font-size: 1.1em;
@@ -222,7 +220,6 @@ pre {
     -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
     -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
     box-shadow: 0 10px 20px #e0e0e0 inset;
-    background: #e8E8E8;
     padding: 15px;
     margin: 20px;
     font-size: 1.1em;
@@ -239,7 +236,6 @@ pre {
     -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
     -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
     box-shadow: 0 10px 20px #e0e0e0 inset;
-    background: #e8E8E8;
     padding: 15px;
     margin: 20px;
     font-size: 1.1em;
@@ -349,7 +345,6 @@ pre {
     -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
     -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
     box-shadow: 0 15px 40px #e0e0e0 inset;
-    background: #e8E8E8;
     padding: 15px;
     margin: 20px;
 }
@@ -583,7 +578,7 @@ background: #FFC;
         width: 289px;
     }
     #dog_wash{
-        background: url(../img/dog_wash.jpg) no-repeat;
+        background: url(../img/dog_wash2.jpg) no-repeat;
         height: 466px;
         position: relative;
         width: 700px;
