@@ -149,7 +149,7 @@ pre {
  * ----------------------- */
 #left_side_wrapper{
     float: left;
-    height: 80%;
+    height: 99%;
     margin: 0 0 0 3px;
     padding: 0 0;
     width: 200px;
@@ -180,6 +180,57 @@ pre {
             font-weight: bold;
             padding: 0 0 0 .2em;
         }
+#github_link{
+    font-family: 'Cagliostro', sans-serif;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
+    -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
+    box-shadow: 0 10px 20px #e0e0e0 inset;
+    background: #e8E8E8;
+    padding: 15px;
+    margin: 20px;
+    font-size: 1.1em;
+    border: 1px dashed black;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+#linkedin_link{
+    font-family: 'Cagliostro', sans-serif;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
+    -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
+    box-shadow: 0 10px 20px #e0e0e0 inset;
+    background: #e8E8E8;
+    padding: 15px;
+    margin: 20px;
+    font-size: 1.1em;
+    border: 1px dashed black;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+#twitter_link{
+    font-family: 'Cagliostro', sans-serif;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
+    -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
+    box-shadow: 0 10px 20px #e0e0e0 inset;
+    background: #e8E8E8;
+    padding: 15px;
+    margin: 20px;
+    font-size: 1.1em;
+    border: 1px dashed black;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
 /* ----------------------- *\
  * Right Side              *
  * ----------------------- */
@@ -200,6 +251,9 @@ pre {
     text-align: center;
 }
 .note_item_container{
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
     height: 20%;
     padding: 5px 0px 5px 50px;
     position: relative;
@@ -209,9 +263,8 @@ pre {
     height: 80%;
     padding: 20px;
     position: relative;
-    width: 80%;
+    width: 99%;
     top: 60px;
-    left: 210px;
 }
     .note_single_content{
         font-family: 'Cagliostro', sans-serif;
@@ -273,6 +326,68 @@ pre {
             -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
             box-shadow: 0 15px 40px #e0e0e0 inset;
         }
+.note_post_container{
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
+    -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
+    box-shadow: 0 15px 40px #e0e0e0 inset;
+    background: #e8E8E8;
+    padding: 15px;
+    margin: 20px;
+}
+    .note_post_top{
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;
+        border-radius:8px;
+        -moz-box-shadow: 0 15px 20px #e0e0e0 inset;
+        -webkit-box-shadow: 0 15px 20px #e0e0e0 inset;
+        box-shadow: 0 15px 20px #e0e0e0 inset;
+        border: 1px solid black;
+        background: #e4ebbe;
+        padding: 10px;
+    }
+        .note_post_top_title{
+            font-size: 1.5em;
+        }
+        .note_post_top_date{
+            width: 45%;
+            position: relative;
+            float: left;
+            font-family: 'Cagliostro', sans-serif;
+        }
+        .note_post_top_category{
+            width: 45%;
+            position: relative;
+            float: left;
+            font-family: 'Cagliostro', sans-serif;
+        }
+    .note_post_bottom{
+
+    }
+        .note_post_bottom_body{
+        }
+        .note_post_bottom_read_more{
+            position: relative;
+            float: right;
+        }
+#default_left_side_top_hole{
+    background: url(../img/hole.png) no-repeat;
+    height: 50px;
+    position: relative;
+    width: 50px;
+    left: 70px;
+    top: 40%;
+}
+#default_left_side_bottom_hole{
+    background: url(../img/hole.png) no-repeat;
+    height: 50px;
+    left: 70px;
+    position: relative;
+    width: 50px;
+    top: 80%;
+}
 /* ----------------------- *\
  * Projects                *
  * ----------------------- */
