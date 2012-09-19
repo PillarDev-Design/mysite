@@ -231,6 +231,22 @@ pre {
     position: relative;
     top: -100px;
 }
+#visually_link{
+    font-family: 'Cagliostro', sans-serif;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -moz-box-shadow: 0 10px 20px #e0e0e0 inset;
+    -webkit-box-shadow: 0 10px 20px #e0e0e0 inset;
+    box-shadow: 0 10px 20px #e0e0e0 inset;
+    background: #e8E8E8;
+    padding: 15px;
+    margin: 20px;
+    font-size: 1.1em;
+    border: 1px dashed black;
+    text-align: center;
+    position: relative;
+}
 /* ----------------------- *\
  * Right Side              *
  * ----------------------- */
@@ -400,6 +416,7 @@ pre {
     -moz-box-shadow: 0 15px 40px #e0e0e0 inset;
     -webkit-box-shadow: 0 15px 40px #e0e0e0 inset;
     box-shadow: 0 15px 40px #e0e0e0 inset;
+    height: 410px;
 }
 .project_title{
     font-family: 'The Girl Next Door', cursive;

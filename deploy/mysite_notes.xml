@@ -20,7 +20,50 @@
         <column name="num_views" type="0">null</column>
         <column name="related_image" type="3" />
         <column name="category_id" type="3">D3</column>
-        <column name="content" type="3">Heya everyone,&lt;br /&gt;&lt;br /&gt;Looks like I came in third place on the data visualization contest hosted by Visually. Awesome-sauce. It was a great exercise to get used to designing/developing utilizing the D3 JS API library. I'm really excited to see what other awesome visualizations I can concieve using this exciting library.&lt;br /&gt;&lt;br /&gt;I've posted a few of my past projects under the project tab, you should check those out too. I'll be updating this site every once in a while with completed projects from my GitHub account.&lt;br /&gt;&lt;br /&gt;So say we all.&lt;br /&gt;&lt;br /&gt;- Chris</column>
-        <column name="description" type="3">A few talking points about D3 and future projects.</column>
+        <column name="content" type="3">
+            Heya everyone,&lt;br /&gt;&lt;br /&gt;
+
+            I participated in the Health Data Visualization Contest hosted by 
+            &lt;a href='http://visual.ly' title='Visual.ly' target='_blank'&gt;Visual.ly
+            &lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;
+
+            &lt;a href='http://visual.ly/users/cnabors'
+            title='Visually Profile' target='_blank'&gt;Visually Profile&lt;/a&gt;
+            &lt;br /&gt;&lt;br /&gt;
+            
+            &lt;a href='http://blog.visual.ly/calling-all-visualizers-health-data-visualization-contest/'
+            title='Contest Details' target='_blank'&gt;Contest Details&lt;/a&gt;
+            &lt;br /&gt;&lt;br /&gt;
+            
+            &lt;a href='http://blog.visual.ly/health-data-visualization-contest-winners/'
+            title='Contest Winners' target='_blank'&gt;Contest Winners&lt;/a&gt;
+            &lt;br /&gt;&lt;br /&gt;
+
+            Looks like I came in third place on the data visualization contest 
+            hosted by Visually. Awesome-sauce. It was a great exercise to get 
+            used to designing/developing utilizing the D3 JS API library. I'm 
+            really excited to see what other awesome visualizations I can 
+            concieve using this exciting library.&lt;br /&gt;&lt;br /&gt;
+            
+            
+            &lt;a href='/us_natality/'
+            title='Link To Project' target='_blank'&gt;Link to US Natality Project&lt;/a&gt;
+            &lt;br /&gt;&lt;br /&gt;
+
+            I've posted a few of my past projects under the project tab, you 
+            should check those out too. I'll be updating this site every once 
+            in a while with completed projects from my GitHub 
+            account.&lt;br /&gt;&lt;br /&gt;
+            
+            So say we all.&lt;br /&gt;&lt;br /&gt;
+            
+            - Chris
+        </column>
+        <column name="description" type="3">
+            A few talking points about the Visual.ly
+            &lt;a href='http://blog.visual.ly/health-data-visualization-contest-winners/'
+            title='Contest' target='_blank'&gt;Contest&lt;/a&gt;
+            , and a little update on future projects.
+        </column>
     </table>
 </database>
