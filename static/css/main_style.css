@@ -363,13 +363,14 @@ pre {
             font-size: 1.5em;
         }
         .note_post_top_date{
-            width: 45%;
+            width: 49%;
             position: relative;
             float: left;
             font-family: 'Cagliostro', sans-serif;
+            text-align: right;
         }
         .note_post_top_category{
-            width: 45%;
+            width: 49%;
             position: relative;
             float: left;
             font-family: 'Cagliostro', sans-serif;
