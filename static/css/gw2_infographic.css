@@ -79,9 +79,50 @@ pre{
     height: 650px;
     width: 650px;
     left: 290px;
-    top: -252px;
+    top: -335px;
     z-index: 9998;
 }
+    #race_asura{
+        position: relative;
+        background: url(../img/gw2_asura.png) no-repeat;
+        width: 21px;
+        height: 17px;
+        top: 230px;
+        left: 400px;
+    }
+    #race_charr{
+        position: relative;
+        background: url(../img/gw2_charr.png) no-repeat;
+        width: 18px;
+        height: 17px;
+        top: 350px;
+        left: 500px;
+    }
+    #race_human{
+        position: relative;
+        background: url(../img/gw2_human.png) no-repeat;
+        width: 22px;
+        height: 16px;
+        top: 540px;
+        left: 360px;
+    }
+    #race_norn{
+        position: relative;
+        background: url(../img/gw2_norn.png) no-repeat;
+        width: 22px;
+        height: 15px;
+        top: 345px;
+        left: 127px;
+    }
+    #race_sylvari{
+        position: relative;
+        background: url(../img/gw2_sylvari.png) no-repeat;
+        width: 19px;
+        height: 18px;
+        top: 165px;
+        left: 230px;
+    }
+
 #profession_chart{
     position: relative;
     height: 650px;
