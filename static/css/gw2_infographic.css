@@ -38,11 +38,42 @@ pre{
             position: relative;
             left: 160px;
         }
+        #site_main_text{
+            position: relative;
+            font-family: 'IM Fell French Canon SC', serif;
+            font-size: 1.5em;
+            color: white;
+            top: -200px;
+            left: -20px;
+            text-align: right;
+        }
+        #site_main_subtext{
+            position: relative;
+            font-family: 'IM Fell French Canon SC', serif;
+            font-size: 1.1em;
+            top: -90px;
+            left: 1060px;
+            z-index: 9999;
+        }
     #middle_container{
         position: relative;
         width: 1240px;
         height: 720px;
     }
+        #profession_text{
+            position: relative;
+            font-family: 'IM Fell French Canon SC', serif;
+            font-size: 3em;
+            left: 20px;
+            top: 5px;
+        }
+        #tradeskill_text{
+            position: relative;
+            font-family: 'IM Fell French Canon SC', serif;
+            font-size: 3em;
+            left: 960px;
+            top: -50px;
+        }
 /**************************************\
  * D3 Containers                      *
 \**************************************/
@@ -59,7 +90,7 @@ pre{
     height: 320px;
     width: 320px;
     left: 455px;
-    top: 179px;
+    top: 24px;
     z-index: 9999;
 }
     #gender_male{
@@ -90,7 +121,7 @@ pre{
     height: 650px;
     width: 650px;
     left: 290px;
-    top: -335px;
+    top: -490px;
     z-index: 9998;
 }
     #race_asura{
@@ -157,7 +188,7 @@ pre{
     position: relative;
     height: 650px;
     width: 300px;
-    top: -1050px;
+    top: -1180px;
 }
     #profession_engineer{
         position: relative;
@@ -227,7 +258,7 @@ pre{
     position: relative;
     height: 650px;
     width: 300px;
-    top: -1740px;
+    top: -1870px;
     left: 930px;
 }
     #tradeskill_artificer{
