@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>GuildWars 2 Infographic</title>
+        <!-- Mootools -->
+        <script type='text/javascript' src='/static/js/mootools.js'></script>
+        <!-- D3 -->
+        <script type='text/javascript' src='/static/js/d3.js'></script>
+        <!-- Local JS File -->
+        <script type='text/javascript' src='/static/js/gw2_infographic.js'></script>
+        <!-- Local CSS File -->
+        <link href='/static/css/gw2_infographic.css' rel='stylesheet' type='text/css' />
+    </head>
+    <body>
+        <div id='site_container'>
+            <div id='site_banner'>
+                <div id='site_logo'></div>
+            </div>
+            <div id='middle_container'>
+                <div id='gender_pie'>
+                    <div id='gender_male'></div>
+                    <div id='gender_female'></div>
+                </div>
+                <div id='race_donut'></div>
+                <div id='profession_chart'></div>
+                <div id='tradeskill_chart'></div>
+            </div>
+        </div> <!-- END site_container -->
+        <script type='text/javascript'>
+            central_init();
+        </script>
+    </body>
+</html>

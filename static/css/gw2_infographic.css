@@ -1,0 +1,98 @@
+/**************************************\
+ * gw2_infographic.css                *
+\**************************************/
+body, html{
+}
+a{
+}
+a:hover{
+}
+h1{
+}
+h2{
+}
+h3{
+}
+h4{
+}
+pre{
+}
+.clear{
+    clear:both;
+}
+
+/**************************************\
+ * Page Layout                        *
+\**************************************/
+#site_container{
+}
+    #site_banner{
+        background: url(../img/gw2bg.jpg) no-repeat;
+        width: 1230px;
+        height: 200px;
+    }
+        #site_logo{
+            background: url(../img/gw2logo.png) no-repeat;
+            width: 310px;
+            height: 205px;
+            position: relative;
+            left: 160px;
+        }
+    #middle_container{
+        position: relative;
+        width: 1240px;
+        height: 720px;
+    }
+/**************************************\
+ * D3 Containers                      *
+\**************************************/
+.white_text{
+    text-align: center;
+    font-size: 1.5em;
+}
+#gender_pie{
+    position: relative;
+    height: 320px;
+    width: 320px;
+    left: 455px;
+    top: 179px;
+    z-index: 9999;
+}
+    #gender_male{
+        position: relative;
+        background: url(../img/gw2_male.png) no-repeat;
+        height: 27px;
+        width: 17px;
+        left: 170px;
+        top: 170px;
+    }
+    #gender_female{
+        position: relative;
+        background: url(../img/gw2_female.png) no-repeat;
+        height: 27px;
+        width: 20px;
+        top: 144px;
+        left: 132px;
+    }
+#race_donut{
+    position: relative;
+    height: 650px;
+    width: 650px;
+    left: 290px;
+    top: -252px;
+    z-index: 9998;
+}
+#profession_chart{
+    position: relative;
+    height: 650px;
+    width: 300px;
+    top: -890px;
+}
+#tradeskill_chart{
+    position: relative;
+    height: 650px;
+    width: 300px;
+    top: -1540px;
+    left: 930px;
+
+}

@@ -57,6 +57,10 @@ def projects():
 @app.route('/us_natality/')
 def us_natality():
     return render_skeleton('us_natality.html')
+
+@app.route('/gw2_infographic/')
+def gw2_infographic():
+    return render_skeleton('gw2_infographic.html')
 #==============================================================#
 # Notes                                                        #
 #==============================================================#
