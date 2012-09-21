@@ -227,7 +227,70 @@ pre{
     position: relative;
     height: 650px;
     width: 300px;
-    top: -1540px;
+    top: -1740px;
     left: 930px;
-
 }
+    #tradeskill_artificer{
+        position: relative;
+        background: url(../img/gw2_artificer.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 232px;
+    }
+    #tradeskill_armorsmith{
+        position: relative;
+        background: url(../img/gw2_armorsmith.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 289px;
+    }
+    #tradeskill_huntsman{
+        position: relative;
+        background: url(../img/gw2_huntsman.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 345px;
+    }
+    #tradeskill_chef{
+        position: relative;
+        background: url(../img/gw2_chef.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 400px;
+    }
+    #tradeskill_jeweler{
+        position: relative;
+        background: url(../img/gw2_jeweler.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 455px;
+    }
+    #tradeskill_leatherworker{
+        position: relative;
+        background: url(../img/gw2_leatherworker.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 512px;
+    }
+    #tradeskill_tailor{
+        position: relative;
+        background: url(../img/gw2_tailor.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 568px;
+    }
+    #tradeskill_weaponsmith{
+        position: relative;
+        background: url(../img/gw2_weaponsmith.png) no-repeat;
+        height: 25px;
+        width: 25px;
+        left: 275px;
+        top: 626px;
+    }
