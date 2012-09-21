@@ -46,9 +46,13 @@ pre{
 /**************************************\
  * D3 Containers                      *
 \**************************************/
-.white_text{
+.formatted_text{
     text-align: center;
-    font-size: 1.5em;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 1.8em;
+    height: 150px;
+    width: 150px;
+    position: relative;
 }
 #gender_pie{
     position: relative;
@@ -66,6 +70,9 @@ pre{
         left: 170px;
         top: 170px;
     }
+    #male_text{
+        position: relative;
+    }
     #gender_female{
         position: relative;
         background: url(../img/gw2_female.png) no-repeat;
@@ -73,6 +80,10 @@ pre{
         width: 20px;
         top: 144px;
         left: 132px;
+    }
+    #female_text{
+        position: relative;
+        left: -140px;
     }
 #race_donut{
     position: relative;
@@ -90,6 +101,10 @@ pre{
         top: 230px;
         left: 400px;
     }
+    #asura_text{
+        top: -80px;
+        left: -40px;
+    }
     #race_charr{
         position: relative;
         background: url(../img/gw2_charr.png) no-repeat;
@@ -97,6 +112,9 @@ pre{
         height: 17px;
         top: 350px;
         left: 500px;
+    }
+    #charr_text{
+        top: -30px;
     }
     #race_human{
         position: relative;
@@ -106,6 +124,10 @@ pre{
         top: 540px;
         left: 360px;
     }
+    #human_text{
+        top: 30px;
+        left: -50px;
+    }
     #race_norn{
         position: relative;
         background: url(../img/gw2_norn.png) no-repeat;
@@ -114,6 +136,10 @@ pre{
         top: 345px;
         left: 127px;
     }
+    #norn_text{
+        top: -30px;
+        left: -125px;
+    }
     #race_sylvari{
         position: relative;
         background: url(../img/gw2_sylvari.png) no-repeat;
@@ -121,6 +147,10 @@ pre{
         height: 18px;
         top: 165px;
         left: 230px;
+    }
+    #sylvari_text{
+        top: -80px;
+        left: -100px;
     }
 
 #profession_chart{

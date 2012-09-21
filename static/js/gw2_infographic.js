@@ -174,6 +174,9 @@ function create_gender_race_chart(){
         })
         .style("stroke", "black")
         .attr("d", race_arc);
+    
+    $('male_text').innerHTML = ("Male<br />" + gender_data[0][1] + "%");
+    $('female_text').innerHTML = ("Female<br />" + gender_data[1][1] + "%");
 
     var gender_svg = d3.select("#gender_pie")
         .append("svg:svg")
@@ -191,7 +194,12 @@ function create_gender_race_chart(){
         })
         .style("stroke", "black")
         .attr("d", gender_arc);
-
+    
+    $('asura_text').innerHTML = (race_data[0][0] + "<br />" + race_data[0][1] + "%");
+    $('charr_text').innerHTML = (race_data[1][0] + "<br />" + race_data[1][1] + "%");
+    $('human_text').innerHTML = (race_data[2][0] + "<br />" + race_data[2][1] + "%");
+    $('norn_text').innerHTML = (race_data[3][0] + "<br />" + race_data[3][1] + "%");
+    $('sylvari_text').innerHTML = (race_data[4][0] + "<br />" + race_data[4][1] + "%");
 }
 function create_profession_chart(){
     var profession_data = data_array['profession'],
