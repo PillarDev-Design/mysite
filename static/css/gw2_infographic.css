@@ -157,8 +157,72 @@ pre{
     position: relative;
     height: 650px;
     width: 300px;
-    top: -890px;
+    top: -1050px;
 }
+    #profession_engineer{
+        position: relative;
+        background: url(../img/gw2_engineer.png) no-repeat;
+        height: 21px;
+        width: 20px;
+        top: 190px;
+        left: 5px;
+    }
+    #profession_mesmer{
+        position: relative;
+        background: url(../img/gw2_mesmer.png) no-repeat;
+        height: 22px;
+        width: 25px;
+        left: 5px;
+        top: 253px;
+    }
+    #profession_necromancer{
+        position: relative;
+        background: url(../img/gw2_necromancer.png) no-repeat;
+        height: 17px;
+        width: 17px;
+        left: 5px;
+        top: 312px;
+    }
+    #profession_guardian{
+        position: relative;
+        background: url(../img/gw2_guardian.png) no-repeat;
+        height: 16px;
+        width: 18px;
+        left: 5px;
+        top: 376px;
+    }
+    #profession_thief{
+        position: relative;
+        background: url(../img/gw2_thief.png) no-repeat;
+        height: 22px;
+        width: 19px;
+        left: 5px;
+        top: 440px;
+    }
+    #profession_elementalist{
+        position: relative;
+        background: url(../img/gw2_elementalist.png) no-repeat;
+        height: 20px;
+        width: 19px;
+        left: 5px;
+        top: 500px;
+    }
+    #profession_ranger{
+        position: relative;
+        background: url(../img/gw2_ranger.png) no-repeat;
+        height: 18px;
+        width: 17px;
+        left: 5px;
+        top: 563px;
+    }
+    #profession_warrior{
+        position: relative;
+        background: url(../img/gw2_warrior.png) no-repeat;
+        height: 24px;
+        width: 25px;
+        left: 5px;
+        top: 625px;
+    }
 #tradeskill_chart{
     position: relative;
     height: 650px;

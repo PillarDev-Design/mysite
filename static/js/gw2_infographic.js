@@ -236,7 +236,7 @@ function create_profession_chart(){
         .attr("y", function(d, i) {
             return (i * bar_height); })
         .attr("width", x_scale)
-        .style("stroke", "white")
+        .style("stroke", "black")
         .attr("height", bar_height - 5)
         .style("fill", function(d, i) {
             return (profession_colors[i]);
@@ -248,10 +248,12 @@ function create_profession_chart(){
         .append("svg:text")
         .attr("x", x_scale)
         .attr("y", function(d, i) {
-            return (i * bar_height + 45); })
+            return (i * bar_height + 40); })
         .attr("dx", -10)
         .attr("dy", ".35em")
         .attr("text-anchor", "end")
+        .style("font-size", "1.2em")
+        .style("font-family", "IM Fell French Canon SC")
         .text(function(d,i) {
             return (profession_names[i] + ": " + d + "%");
         });
@@ -286,7 +288,7 @@ function create_tradeskill_chart(){
         .attr("x", function(d, i){
             return (bar_length - x_scale(d));
         })
-        .style("stroke", "white")
+        .style("stroke", "black")
         .attr("height", bar_height - 5)
         .style("fill", function(d, i) {
             return (tradeskill_colors[i]);
@@ -300,10 +302,12 @@ function create_tradeskill_chart(){
             return (bar_length - x_scale(d) + 20);
         })
         .attr("y", function(d, i) {
-            return (i * bar_height + 45); })
+            return (i * bar_height + 40); })
         .attr("dx", -10)
         .attr("dy", ".35em")
         .attr("text-anchor", "front")
+        .style("font-size", "1.1em")
+        .style("font-family", "IM Fell French Canon SC")
         .text(function(d,i) {
             return (tradeskill_names[i] + ": " + d + "%");
         });
