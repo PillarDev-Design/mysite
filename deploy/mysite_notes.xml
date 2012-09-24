@@ -11,7 +11,6 @@
         <column name="content" type="3">Successfully switched the site from Django to Flask/mongodb!</column>
         <column name="description" type="3">Successful launch.</column>
     </table>
-
     <table name="mysite_note_post">
         <column name="slug" type="3">health_data_vis</column>
         <column name="title" type="3">Health Data Vis Contest</column>
@@ -65,5 +64,16 @@
             title='Contest' target='_blank'&gt;Contest&lt;/a&gt;
             , and a little update on future projects.
         </column>
+    </table>
+    <table name="mysite_note_post">
+        <column name="slug" type="3">gw2_infographic_post</column>
+        <column name="title" type="3">GuildWars2 Infographic Post</column>
+        <column name="post_date" type="3">2012-09-21 01:33:45</column>
+        <column name="post_last_edit_date" type="0">null</column>
+        <column name="num_views" type="0">null</column>
+        <column name="related_image" type="3" />
+        <column name="category_id" type="3">D3</column>
+        <column name="content" type="3">Successfully switched the site from Django to Flask/mongodb!</column>
+        <column name="description" type="3">Successful launch.</column>
     </table>
 </database>
