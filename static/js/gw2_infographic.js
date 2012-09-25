@@ -178,15 +178,6 @@ function create_gender_race_chart(){
     $('male_text').innerHTML = ("Male<br />" + gender_data[0][1] + "%");
     $('female_text').innerHTML = ("Female<br />" + gender_data[1][1] + "%");
     
-    /*
-    var gender_svg = d3.select("#gender_pie")
-        .append("svg:svg")
-        .attr("width", gender_width)
-        .attr("height", gender_height)
-        .append("svg:g")
-        .attr("transform", "translate(" + (gender_width / 2) + "," + (gender_height / 2) + ")");
-    */
-    
     var gender_svg = d3.select("#gender_pie_svg")
         .append("svg:g")
         .attr("transform", "translate(" + (gender_width / 2) + "," + (gender_height / 2) + ")");
@@ -196,10 +187,18 @@ function create_gender_race_chart(){
         .enter()
         .append("svg:path")
         .attr("fill", function(d, i) {
-            return gender_color(i);
+            //return gender_color(i);
+            console.log(i);
+            if(i === 0){
+                console.log('Returning Male');
+                return "url(#maleGradient)";
+            } else {
+                console.log('Returning Female');
+                return "url(#femaleGradient)";
+            }
         })
         .style("stroke", "black")
-        .style("filter", "url(#waterColor1")
+        .style("filter", "url(#waterColor1)")
         .attr("d", gender_arc);
     
     $('asura_text').innerHTML = (race_data[0][0] + "<br />" + race_data[0][1] + "%");

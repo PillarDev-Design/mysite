@@ -29,60 +29,87 @@
                 <div id='gender_pie'>
                     <svg id='gender_pie_svg' width=320 height=320>
                         <defs id='filters'>
-                            <filter x="-0.150000001"
-                                y="-0.150000001"
-                                width="1.3"
-                                height="1.3"
+                            <filter x="-0.30000001"
+                                y="-0.5"
+                                width="1.6"
+                                height="2"
                                 color-interpolation-filters="sRGB"
                                 id="waterColor1">
-                                <feTurbulence
-                                    result="result4"
-                                    seed="0"
-                                    numOctaves="5"
-                                    baseFrequency="0.04"
-                                    type="fractalNoise"
-                                    id="feTurbulence4068" />
-                                <feDisplacementMap
-                                    in2="result4"
-                                    scale"10"
-                                    xChannelSelector="R"
-                                    yChannelSelector="G"
-                                    in="SourceGraphic"
-                                    result="result3"
-                                    id="feDisplacementMap4070" />
-                                <feDiffuseLightning
-                                    in="result4"
-                                    result="result1"
-                                    surfaceScale="2"
-                                    diffuseConstant="1"1
-                                    lighting-color="#e9e6d7"
-                                    id="feDiffuseLighting4072">
-                                        <feDistantLight
-                                        elevation="40"
-                                        azimuth="235"
-                                        id="feDistantLight4074" />
-                                </feDiffuseLighting>
-                                <feComposite
-                                    in2="result1"
-                                    operator="in"
-                                    in="result3"
-                                    result="result2"
-                                    id="feComposite4076" />
-                                <feComposite
-                                    in2="result1"
-                                    operator="arithmetic"
-                                    k1="1.7"
-                                    k2="0"
-                                    k3="0"
-                                    k4="0"
-                                    result="result5"
-                                    id="feComposite4078" />
-                                <feBlend
-                                    in2="result3"
-                                    mode="normal"
-                                    in="result5"
-                                    id="feBlend4080" />
+                            <feGaussianBlur
+                                result="result8"
+                                stdDeviation="15"
+                                id="feGaussianBlur3948" />
+                            <feTurbulence
+                                baseFrequency="0.028"
+                                numOctaves="4"
+                                type="fractalNoise"
+                                result="result7"
+                                seed="27"
+                                id="feTurbulence3950" />
+                            <feComposite
+                                in2="result8"
+                                operator="over"
+                                in="result7"
+                                result="result6"
+                                id="feComposite3952" />
+                            <feColorMatrix
+                                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -4 "
+                                result="result9"
+                                id="feColorMatrix3954" />
+                            <feDisplacementMap
+                                in2="result9"
+                                scale="50"
+                                xChannelSelector="A"
+                                yChannelSelector="A"
+                                in="result7"
+                                result="result4"
+                                id="feDisplacementMap3956" />
+                            <feComposite
+                                in2="result4"
+                                operator="in"
+                                in="result8"
+                                result="result2"
+                                id="feComposite3958" />
+                            <feComposite
+                                in2="result9"
+                                operator="in"
+                                in="result2"
+                                result="fbSourceGraphic"
+                                id="feComposite3960" />
+                            <feComposite
+                                in2="fbSourceGraphic"
+                                operator="arithmetic"
+                                k1="0.5"
+                                k2="1"
+                                k3="0"
+                                k4="0"
+                                in="fbSourceGraphic"
+                                result="result91"
+                                id="feComposite3962" />
+                            <feBlend
+                                in2="result91"
+                                mode="multiply"
+                                in="fbSourceGraphic"
+                                id="feBlend3964" />
                             </filter>
+                            <linearGradient
+                                id='maleGradient'
+                                x1='0%'
+                                y1='0%'
+                                x2='100%'
+                                y2='100%'>
+                                <stop offset='0%' style='stop-color:rgb(0,0,0);stop-opacity:1' />
+                                <stop offset='100%' style='stop-color:rgb(195,11,11);stop-opacity:1' />
+                            </linearGradient>
+                            <linearGradient
+                                id='femaleGradient'
+                                x1='100%'
+                                y1='100%'
+                                x2='0%'
+                                y2='0%'>
+                                <stop offset='0%' style='stop-color:rgb(0,0,0); stop-opacity:1' />
+                                <stop offset='100%' style='stop-color:rgb(255,161,13): stop-opacity:1' />
+                            </linearGradient>
                         </defs>
                     </svg>
                     <div id='gender_male'>
